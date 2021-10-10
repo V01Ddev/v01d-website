@@ -12,14 +12,14 @@ h1 {
 	text-align: left;
 	font-family: Monospace;
 	color: #4AF626;
-	font-size: 52px;
+	font-size: 42px;
 }
 
 
 /* TYPE */
 
 .typewriter h1 {
-	text-align: center;
+	text-align: left;
 	overflow: hidden; /* Ensures the content is not revealed until the animation */
 	border-right: .15em solid green; /* The typwriter cursor */
 	white-space: nowrap; /* Keeps the content on a single line */
