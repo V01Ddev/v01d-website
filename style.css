@@ -22,8 +22,8 @@ p {
 border-right: solid 3px rgba(0,255,0,.75);
 white-space: nowrap;
 overflow: hidden;    
-font-family: 'Source Code Pro', monospace;  
-font-size: 2vw;
+font-family: Monospace;  
+font-size: 2.5vw;
 color: #4AF626;
 margin: 0 auto;
 }
@@ -38,7 +38,7 @@ animation: animated-text 4s steps(29,end) 1s 1 normal both,
 
 @keyframes animated-text{
 from{width: 0;}
-to{width: 50%;}
+to{width: 60%;}
 }
 
 /* cursor animations */
