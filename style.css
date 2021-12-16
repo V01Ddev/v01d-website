@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Roboto:wght@300;400&display=swap');
-
-
 head {
 	text-align: center;
 	font-family: Monospace;
@@ -41,7 +38,7 @@ p {
 
 @keyframes animated-text{
 	from{width: 0;}
-	to{width: 40%;}
+	to{width: 55%;}
 }
 
 /* cursor animations */
@@ -64,7 +61,7 @@ h2 {
 
 a {
 	text-align: left;
-	font-family: 'Roboto Mono', monospace;
+	font-family: Monospace;
 	color: #4AF626;
 }
 
@@ -78,7 +75,7 @@ img {
 
 .links {
 	text-align: center;
-	font-family: 'Roboto Mono', monospace;
+	font-family: Monospace;
 	color: #4AF626;
 	font-size: 2vw;
 
