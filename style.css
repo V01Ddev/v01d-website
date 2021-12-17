@@ -1,4 +1,5 @@
 
+/* BIG SCREEN */
 
 @media screen and (min-width: 800px){
 	html {
@@ -12,11 +13,6 @@
 		font-family: Monospace;
 	}
 
-
-	body {
-		text-align: center;
-		font-family: Monospace;
-	}
 
 
 	/* TYPE */
@@ -41,7 +37,7 @@
 
 	@keyframes animated-text{
 		from{width: 0;}
-		to{width: 55%;}
+		to{width: 45%;}
 	}
 
 	/* cursor animations */
@@ -100,13 +96,6 @@
 	}
 
 
-	header {
-		display: flex;
-		justify-content: space-between;
-		pudding: len;
-	}
-
-
 
 	/* NAV */
 
@@ -123,8 +112,9 @@
 	  float: left;
 	  display: block;
 	  color: #f2f2f2;
+	  font-family: 'Courier New', monospace;
 	  text-align: center;
-	  padding: 6px 8px;
+	  padding: 14px 16px;
 	  text-decoration: none;
 	  font-size: 25px;
 	}
@@ -140,11 +130,16 @@
 	.topnav .icon {
 	  display: none;
 	}
+
+	.within_nav {
+		display: inline;
+	}
 }
 
 
 
 
+/* SMALL SCREEN */
 
 @media screen and (max-width: 800px){
 	html {
@@ -159,11 +154,6 @@
 	}
 
 
-	body {
-		text-align: center;
-		font-family: Monospace;
-	}
-
 
 	/* TYPE */
 
@@ -172,7 +162,7 @@
 		white-space: nowrap;
 		overflow: hidden;    
 		font-family: 'Courier New', monospace;
-		font-size: 2vw;
+		font-size: 3vw;
 		color: #4AF626;
 		margin: 0 auto;
 	}
@@ -187,7 +177,7 @@
 
 	@keyframes animated-text{
 		from{width: 0;}
-		to{width: 80%;}
+		to{width: 68%;}
 	}
 
 	/* cursor animations */
@@ -231,11 +221,11 @@
 	}
 
 	img {
-		width: 60vw;
+		width: 70vw;
 	 	display: block;
 		margin-left: auto;
 		margin-right: auto;
-		margin-top: 3vw;
+		margin-top: 6vw;
 	}
 
 	.links {
@@ -247,11 +237,6 @@
 	}
 
 
-	header {
-		display: flex;
-		justify-content: space-between;
-		pudding: len;
-	}
 
 
 
@@ -263,17 +248,21 @@
 	  top: 2px;
 	  left: 2px;
 	  position: fixed;
+	  width: 100%;
+	  text-align: center;
 	}
 
 	/* Style the links inside the navigation bar */
 	.topnav a {
-	  float: left;
-	  display: block;
-	  color: #f2f2f2;
-	  text-align: center;
-	  padding: 6px 8px;
-	  text-decoration: none;
-	  font-size: 13px;
+
+		display: block;
+		color: #f2f2f2;
+		font-family: 'Courier New', monospace;
+		text-align: center;
+		padding: 6px 8px;
+		text-decoration: none;
+		font-size: 13px;
+
 	}
 
 	/* Change the color of links on hover */
@@ -286,5 +275,10 @@
 	/* Hide the link that should open and close the topnav on small screens */
 	.topnav .icon {
 	  display: none;
+	}
+
+	.within_nav {
+		display: inline-block;
+
 	}
 }
