@@ -1,9 +1,9 @@
-
 /* BIG SCREEN */
 
 @media screen and (min-width: 800px){
 	html {
 		scroll-behavior: smooth;
+		flex-direction: column;
 	}
 
 
@@ -11,6 +11,23 @@
 	head {
 		text-align: center;
 		font-family: Monospace;
+	}
+
+
+	#home {
+		padding-top: 130px;
+		height: 100vh;
+	}
+
+
+	#aboutme {
+		padding-top: 15px;
+		height: 100vh;
+	}
+
+	#workcontact {
+		padding-top: 60px;
+		height:  100vh;
 	}
 
 
@@ -92,7 +109,6 @@
 		font-family: Monospace;
 		color: #4AF626;
 		font-size: 2vw;
-
 	}
 
 
@@ -156,6 +172,7 @@
 @media screen and (max-width: 800px){
 	html {
 		scroll-behavior: smooth;
+		flex-direction: column;
 	}
 
 
@@ -163,6 +180,23 @@
 	head {
 		text-align: center;
 		font-family: Monospace;
+	}
+
+
+	#home {
+		padding-top: 130px;
+		height: 100vh;
+	}
+
+
+	#aboutme {
+		padding-top: 15px;
+		height: 100vh;
+	}
+
+	#workcontact {
+		padding-top: 60px;
+		height:  100vh;
 	}
 
 
