@@ -97,7 +97,20 @@
 		color: #4AF626;
 	}
 
-	img {
+	button {
+    background-color: Transparent;
+    border: none;
+    cursor:pointer;
+    outline:none;
+	 	width: 2vw;
+	 	height: 2vw;
+	}
+
+	#icon_low {
+		display:none;
+	}
+
+	#logo_svg {
 		width: 25vw;
 	 	display: block;
 		margin-left: auto;
@@ -160,6 +173,46 @@
 	.within_nav {
 		display: inline;
 	}
+
+
+	.tooltip {
+		position: relative;
+		display: inline-block;
+}
+
+	.tooltip .tooltiptext {
+		visibility: hidden;
+	 	width: 140px;
+	  background-color: #555;
+	  color: #fff;
+		text-align: center;
+		border-radius: 6px;
+		padding: 5px;
+		position: absolute;
+		z-index: 1;
+		bottom: 150%;
+		left: 50%;
+		margin-left: -75px;
+		opacity: 0;
+		transition: opacity 0.3s;
+	}
+
+	.tooltip .tooltiptext::after {
+		content: "";
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		margin-left: -5px;
+		border-width: 5px;
+		border-style: solid;
+		border-color: #555 transparent transparent transparent;
+	}
+
+	.tooltip:hover .tooltiptext {
+		visibility: visible;
+		opacity: 1;
+	}
+
 }
 
 
@@ -277,7 +330,19 @@
 		font-size: 6vw;
 	}
 
-	img {
+	button {
+    background-color: Transparent;
+    border: none;
+    cursor:pointer;
+    outline:none;
+	 	width: auto;
+	}
+
+	#icon_norm {
+		display:none;
+	}
+
+	#logo_svg {
 		width: 70vw;
 	 	display: block;
 		margin-left: auto;
