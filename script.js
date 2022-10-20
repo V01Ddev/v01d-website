@@ -31,4 +31,9 @@ function myFunction() {
 
   /* Alert the copied text */
   alert("Copied the text: " + copyText.value);
+
+  let svgLogo = document.getElementById("logo_svg");
+  console.log(svgLogo)
+
+  svgLogo.style.opacity = 1;
 } 
