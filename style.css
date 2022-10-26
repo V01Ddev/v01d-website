@@ -69,6 +69,13 @@
 	/* TYPE */
 
 
+    pre {
+        white-space: pre;
+        margin: 1em 0;
+        text-align: center;
+        font-size: 0.69vw;
+        color: #4AF626;
+    }
 
 	h2 {
 		text-align: left;
@@ -301,6 +308,11 @@
 	/* TYPE */
 
 
+    pre {
+        white-space: pre;
+        margin: 1em 0;
+        color: #4AF626;
+    }
 
 	h2 {
 		text-align: left;
