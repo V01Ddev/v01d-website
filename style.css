@@ -1,427 +1,140 @@
+html {
+    scroll-behavior: smooth;
+    font-family: 'Roboto Mono', monospace;
+    color: #4AF626;
+    background: rgb(25,25,25);
+    background: linear-gradient(180deg, rgba(25,25,25,1) 0%, rgba(52,52,52,1) 50%, rgba(25,25,25,1) 100%); 
+}
+
+pre {
+    text-align: center;
+    white-space: pre;
+}
+
+h3 {
+    text-align: center;
+    font-size: 7vw;
+}
+
+h6 {
+    text-align: center;
+    font-size: 4vw;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 4vw;
+}
+
+a {
+    text-align: left;
+    font-family: 'Roboto Mono', monospace;
+    color: #4AF626;
+    align: center;
+    font-size: 6vw;
+}
+
+button {
+    display:none
+    /*
+    background-color: Transparent;
+    border: none;
+    cursor:pointer;
+    outline:none;
+    width: auto;
+    */
+}
+
+#h69 {
+    color: #1a1a1a;
+    text-align: center;
+    font-size: 6vw;
+    margin-top: 50vw;
+    margin-bottom: 30vw;
+}
+
+section {
+    margin-top: 30vw;
+    margin-bottom: 100vw;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20vw;
+    gap: 4vw;
+}
+
+#aboutme {
+    display: flex;
+    text-align: center;
+    padding-bottom: 22vw;
+    flex-direction: column;
+}
+
+#workcontact {
+    display: flex;
+    text-align: center;
+    margin-bottom: 20vw;
+    flex-direction: column;
+}
+
+
+
+
 /* BIG SCREEN */
-
-@media screen and (min-width: 800px){
-	html {
-		scroll-behavior: smooth;
-		flex-direction: column;
-	}
-
-
-
-	head {
-		text-align: center;
-		font-family: Monospace;
-	}
-
-
-	#home {
-		padding-top: 100px;
-		height: 100vh;
-	}
-
-
-	#aboutme {
-		padding-top: 15px;
-		height: 100vh;
-	}
-
-	#workcontact {
-		padding-top: 80px;
-		height:  55vh;
-		padding-bottom: 60px;
-	}
-
-
-
-	/* TYPE */
-
-	h6 {
-		border-right: solid 3px rgba(0,255,0,.75);
-		white-space: nowrap;
-		overflow: hidden;    
-		font-family: 'Courier New', monospace;
-		font-size: 2vw;
-		color: #4AF626;
-		margin: 0 auto;
-	}
-
-	/* Animation */
-	h6 {
-		animation: animated-text 4s steps(29,end) 1s 1 normal both,
-	    animated-cursor 600ms steps(29,end) infinite;
-	}
-
-	/* text animation */
-
-	@keyframes animated-text{
-		from{width: 0;}
-		to{width: 45%;}
-	}
-
-	/* cursor animations */
-
-	@keyframes animated-cursor{
-		from{border-right-color: rgba(0,255,0,.75);}
-		to{border-right-color: transparent;}
-	}
-
-
-	/* TYPE */
-
+@media screen and (min-width: 768px){
 
     pre {
-        white-space: pre;
-        margin: 1em 0;
-        text-align: center;
-        font-size: 0.69vw;
-        color: #4AF626;
+        font-size: 0.7vw;
     }
 
-	h2 {
-		text-align: left;
-		font-family: 'Roboto Mono', monospace;
-		color: #4AF626;
-		font-size: 2vw;
-	}
-
-	h3{
-		text-align: center;
-		font-family: 'Roboto Mono', monospace;
-		color: #4AF626;
-		font-size: 3vw;
-	}
-
-	p {
-		text-align: left;
-		font-family: 'Roboto Mono', monospace;
-		color: #4AF626;
-		font-size: 2vw;
-	}
-
-	a {
-		text-align: left;
-		font-family: 'Roboto Mono', monospace;
-		color: #4AF626;
-	}
-
-	button {
-    background-color: Transparent;
-    border: none;
-    cursor:pointer;
-    outline:none;
-	 	width: 2vw;
-	 	height: 2vw;
-	}
-
-	#icon_low {
-		display:none;
-	}
-
-	#logo_svg {
-		width: 25vw;
-	 	display: block;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 3vw;
-}
-
-	.h69 {
-		padding-top: 1px;
-		color: #191919;
-		text-align: center;
-		font-family: Monospace;
-		font-size: 6vw;
-		padding-bottom: 10vh;
-	}
-
-	.links {
-		text-align: center;
-		font-family: Monospace;
-		color: #4AF626;
-		font-size: 2vw;
-	}
-
-
-
-	/* NAV */
-
-	.topnav {
-	  background-color: #333;
-	  overflow: hidden;
-	  top:8px;
-	  left:10px;
-	  position: fixed;
-	}
-
-	/* Style the links inside the navigation bar */
-	.topnav a {
-	  float: left;
-	  display: block;
-	  color: #f2f2f2;
-	  font-family: 'Courier New', monospace;
-	  text-align: center;
-	  padding: 14px 16px;
-	  text-decoration: none;
-	  font-size: 25px;
-	}
-
-	/* Change the color of links on hover */
-	.topnav a:hover {
-	  background-color: #191919;
-	  color: white;
-	}
-
-
-	/* Hide the link that should open and close the topnav on small screens */
-	.topnav .icon {
-	  display: none;
-	}
-
-	.within_nav {
-		display: inline;
-	}
-
-
-	.tooltip {
-		position: relative;
-		display: inline-block;
-}
-
-	.tooltip .tooltiptext {
-		visibility: hidden;
-	 	width: 140px;
-	  background-color: #555;
-	  color: #fff;
-		text-align: center;
-		border-radius: 6px;
-		padding: 5px;
-		position: absolute;
-		z-index: 1;
-		bottom: 150%;
-		left: 50%;
-		margin-left: -75px;
-		opacity: 0;
-		transition: opacity 0.3s;
-	}
-
-	.tooltip .tooltiptext::after {
-		content: "";
-		position: absolute;
-		top: 100%;
-		left: 50%;
-		margin-left: -5px;
-		border-width: 5px;
-		border-style: solid;
-		border-color: #555 transparent transparent transparent;
-	}
-
-	.tooltip:hover .tooltiptext {
-		visibility: visible;
-		opacity: 1;
-	}
-
-}
-
-
-
-
-/* SMALL SCREEN */
-/* SMALL SCREEN */
-/* SMALL SCREEN */
-/* SMALL SCREEN */
-/* SMALL SCREEN */
-/* SMALL SCREEN */
-/* SMALL SCREEN */
-/* SMALL SCREEN */
-/* SMALL SCREEN */
-/* SMALL SCREEN */
-
-
-
-
-@media screen and (max-width: 800px){
-	html {
-		scroll-behavior: smooth;
-		flex-direction: column;
-	}
-
-
-
-	head {
-		text-align: center;
-		font-family: Monospace;
-	}
-
-
-	#home {
-		padding-top: 100px;
-		height: 100vh;
-	}
-
-
-	#aboutme {
-		padding-top: 15px;
-		height: 100vh;
-	}
-
-	#workcontact {
-		padding-top: 60px;
-		height:  100vh;
-		padding-bottom: 60px;
-	}
-
-
-
-	/* TYPE */
-
-	h6 {
-		border-right: solid 3px rgba(0,255,0,.75);
-		white-space: nowrap;
-		overflow: hidden;    
-		font-family: 'Courier New', monospace;
-		font-size: 3vw;
-		color: #4AF626;
-		margin: 0 auto;
-	}
-
-	/* Animation */
-	h6 {
-		animation: animated-text 4s steps(29,end) 1s 1 normal both,
-	    animated-cursor 600ms steps(29,end) infinite;
-	}
-
-	/* text animation */
-
-	@keyframes animated-text{
-		from{width: 0;}
-		to{width: 68%;}
-	}
-
-	/* cursor animations */
-
-	@keyframes animated-cursor{
-		from{border-right-color: rgba(0,255,0,.75);}
-		to{border-right-color: transparent;}
-	}
-
-
-	/* TYPE */
-
-
-    pre {
-        white-space: pre;
-        margin: 1em 0;
-        color: #4AF626;
+    h3 {
+        font-size: 4vw;
     }
 
-	h2 {
-		text-align: left;
-		font-family: 'Roboto Mono', monospace;
-		color: #4AF626;
-		font-size: 4vw;
-	}
+    h6 {
+        font-size: 2vw;
+    }
 
-	h3{
-		text-align: center;
-		font-family: 'Roboto Mono', monospace;
-		color: #4AF626;
-		font-size: 7vw;
-	}
+    p {
+        font-size: 3vw;
+    }
 
-	p {
-		text-align: left;
-		font-family: 'Roboto Mono', monospace;
-		color: #4AF626;
-		
-	}
+    a {
+        align: center;
+        font-size: 3vw;
+    }
 
-	a {
-		text-align: left;
-		font-family: 'Roboto Mono', monospace;
-		color: #4AF626;
-		font-size: 6vw;
-	}
+    button {
+        background-color: Transparent;
+        border: none;
+        cursor:pointer;
+        outline:none;
+        width: auto;
+    }
 
-	button {
-    background-color: Transparent;
-    border: none;
-    cursor:pointer;
-    outline:none;
-	 	width: auto;
-	}
+    #h69 {
+        font-size: 6vw;
+        margin-top: 0.5vw;
+        margin-bottom: 0vw;
+    }
 
-	#icon_norm {
-		display:none;
-	}
+    section {
+        margin-top: 10vw;
+        margin-bottom: 20vw;
+    }
 
-	#logo_svg {
-		width: 70vw;
-	 	display: block;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 6vw;
-	}
+    #home {
+        padding-top: 0;
+    }
 
-	.h69 {
-		padding-top: 1px;
-		color: #191919;
-		text-align: center;
-		font-family: Monospace;
-		font-size: 6vw;
-		padding-bottom: 10vh;
-	}
+    #aboutme {
+        font-size: 1vw;
+    }
 
-	.links {
-		text-align: center;
-		font-family: Monospace;
-		color: #4AF626;
-		font-size: 4vw;
-
-	}
-
-
-
-
-
-	/* NAV */
-
-	.topnav {
-	  background-color: #333;
-	  overflow: hidden;
-	  top: -3px;
-	  left: -1px;
-	  position: fixed;
-	  width: 100%;
-	  text-align: center;
-	}
-
-	/* Style the links inside the navigation bar */
-	.topnav a {
-
-		display: block;
-		color: #f2f2f2;
-		font-family: 'Courier New', monospace;
-		text-align: center;
-		padding: 6px 8px;
-		text-decoration: none;
-		font-size: 13px;
-
-	}
-
-	/* Change the color of links on hover */
-	.topnav a:hover {
-	  background-color: #191919;
-	  color: white;
-	}
-
-
-	/* Hide the link that should open and close the topnav on small screens */
-	.topnav .icon {
-	  display: none;
-	}
-
-	.within_nav {
-		display: inline-block;
-
-	}
+    #workcontact {
+        font-size: 1vw;
+   }
 }
+

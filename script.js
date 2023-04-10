@@ -37,3 +37,21 @@ function myFunction() {
 
   svgLogo.style.opacity = 1;
 } 
+
+
+
+var i = 0;
+var txt = "I am v01d, welcome to my website"
+var speed = 100;
+
+function typeWriter() {
+    if (i < txt.length) {
+        document.getElementById("typing").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed)
+    }
+}
+
+window.onload = function() {
+  typeWriter();
+};
