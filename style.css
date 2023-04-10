@@ -35,14 +35,11 @@ a {
 }
 
 button {
-    display:none
-    /*
     background-color: Transparent;
     border: none;
     cursor:pointer;
     outline:none;
-    width: auto;
-    */
+    width: 1vw;
 }
 
 #h69 {
@@ -80,7 +77,9 @@ section {
 }
 
 
-
+#icon {
+    display: none;
+}
 
 /* BIG SCREEN */
 @media screen and (min-width: 768px){
@@ -135,6 +134,10 @@ section {
 
     #workcontact {
         font-size: 1vw;
+   }
+    
+    #icon {
+        display: inline;
    }
 }
 
