@@ -6,24 +6,19 @@ html {
     background: linear-gradient(180deg, rgba(25,25,25,1) 0%, rgba(52,52,52,1) 50%, rgba(25,25,25,1) 100%); 
 }
 
-pre {
-    text-align: center;
-    white-space: pre;
-}
-
 h3 {
     text-align: center;
-    font-size: 7vw;
+    font-size: 8vw;
 }
 
 h6 {
     text-align: center;
-    font-size: 4vw;
+    font-size: 5vw;
     margin: 0 auto;
 }
 
 p {
-    font-size: 4vw;
+    font-size: 6vw;
 }
 
 a {
@@ -58,35 +53,41 @@ section {
 #home {
     display: flex;
     flex-direction: column;
-    padding-top: 20vw;
-    gap: 4vw;
+    justify-content: center;
+    align-self: center;
+    padding-top: 30vw;
+}
+
+img {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 50vw;
 }
 
 #aboutme {
     display: flex;
-    text-align: center;
-    padding-bottom: 22vw;
     flex-direction: column;
+    text-align: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 
-#workcontact {
+#work {
     display: flex;
-    text-align: center;
-    margin-bottom: 20vw;
     flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20vw;
 }
 
-
-#icon {
-    display: none;
+a {
+    font-size: 10vw;
+    align-self: center;
 }
+
 
 /* BIG SCREEN */
 @media screen and (min-width: 768px){
-
-    pre {
-        font-size: 0.7vw;
-    }
 
     h3 {
         font-size: 4vw;
@@ -97,20 +98,7 @@ section {
     }
 
     p {
-        font-size: 3vw;
-    }
-
-    a {
-        align: center;
-        font-size: 3vw;
-    }
-
-    button {
-        background-color: Transparent;
-        border: none;
-        cursor:pointer;
-        outline:none;
-        width: auto;
+        font-size: 2vw;
     }
 
     #h69 {
@@ -125,19 +113,29 @@ section {
     }
 
     #home {
-        padding-top: 0;
+        padding-top: 0.1vw;
+    }
+
+    img {
+        width: 30vw;
     }
 
     #aboutme {
-        font-size: 1vw;
+        align-self: center;
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
 
-    #workcontact {
-        font-size: 1vw;
-   }
-    
-    #icon {
-        display: inline;
-   }
+    #work {
+        display: flex;
+        align-self: center;
+        margin-bottom: 20vw;
+        flex-direction: column;
+    }
+
+a {
+    font-size: 4vw;
+    align-self: center;
+}
 }
 
