@@ -18,9 +18,17 @@
         </head>
     </section>
 
+    <?php
+    function make_card($title="", $dis="", $img=""){
+    echo "<div class='blog-card'><img src='{$img}' loading='lazy' alt='{$title}'><h2>{$title}</h2><h3>{$dis}</h3></div>";
+    }
+    ?>
+
     <section id="blog-gallery">
         <div class="blog-card">
-            <h2>Card title</h2>
+            <?php
+            make_card("dumb blog", "How I made this dumb blog using php and Jquery")
+            ?>
         </div>
     </section>
 

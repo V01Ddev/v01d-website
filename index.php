@@ -17,7 +17,7 @@
             <link rel="stylesheet" type="text/css" href="styles/style.css">
             <link rel="shortcut icon" type="image/ico" href="assets/logo.ico">
 
-            <img src='assets/logo.svg', alt='logo'/>
+            <img src='assets/logo.svg', alt='logo'>
             <h6 id="typing"></h6>
         </head>
     </section>

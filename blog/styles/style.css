@@ -71,8 +71,14 @@ a {
         justify-content: center;
     }
 
-    #blog-card {
-        display: block;
+    .blog-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        text-align: center;
+        width: 10vw;
+        height; 30vw;
     }
 
 }
