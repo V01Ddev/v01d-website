@@ -36,8 +36,8 @@
 
         <!-- My Work-->
         <section id='work'>
-            <h3>You can find my code on <a href="https://github.com/V01Ddev" target="_blank">github</a></h3>
-            <h3>Some of my projects are documented on my <a href="blog/blog.php">blog</a> </h3>
+            <h2>You can find my code on <a href="https://github.com/V01Ddev" target="_blank">github</a></h2>
+            <h2>Some of my projects are documented on my <a href="blog/blog.php">blog</a></h2>
         </section>
         <div id="h69">YOUR MOM</div>
     </body>
