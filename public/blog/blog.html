@@ -13,7 +13,14 @@
     <script src='scripts/jquery-3.7.1.js'></script>
     <script src='scripts/script.js'></script>
 
-    <?php include "../includes/nav-bar.php" ?>
+    <!-- Nav Bar -->
+    <div class="nav-bar"> </div>
+
+    <script>
+    $(function(){
+        $(".nav-bar").load("/includes/nav-bar.html");
+    });
+    </script>
 
     <section id="blog-landing">
         <head>
@@ -24,21 +31,25 @@
         </head>
     </section>
 
-    <?php
-    function make_card($title="", $dis="", $img=""){
-    if ($img == "") {
-    echo "<div class='blog-card'> <h2>{$title}</h2> <h3>{$dis}</h3> </div> </div>";
-    } else {
-    echo "<div class='blog-card'> <h2>{$title}</h2> <img src='{$img}' alt='{$title}'> <h3>{$dis}</h3> </div> </div>";
+    <script>
+    function make_card(title="", dis="", img="") {
+    if (img===""){
+    console.log(img)
+    document.write(`<div class='blog-card'> <h2>${title}</h2> <h3>${dis}</h3> </div> </div>`)
+    }
+    else{
+    console.log(img)
+    document.write(`<div class='blog-card'> <h2>${title}</h2> <img src='${img}' alt='${title}'> <h3>${dis}</h3> </div> </div>`)
     }
     }
-    ?>
+    </script>
 
     <body>
         <section id="blog-gallery">
             <!-- <h2> There aren't any blog posts for now... </h2> -->
-            <?php make_card("test blog", "This should NEVER reach deployment") ?>
-            <a href="./base.php">base.php</a>
+            <script>
+            make_card("test blog", "This should NEVER reach deployment")
+            </script>
             <!-- <?php make_card("ESP Glider", "The process of building a gilder using ESP32s") ?> -->
         </section>
     </body>
