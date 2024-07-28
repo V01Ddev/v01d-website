@@ -1,24 +1,11 @@
 {
-  "name": "v01d-website",
-  "version": "1.0.0",
-  "description": "the v01d.dev website",
-  "main": "index.js",
   "scripts": {
-    "devStart": "nodemon index.js"
+    "dev": "next dev"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/V01Ddev/v01d-website.git"
-  },
-  "author": "v01d.dev",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/V01Ddev/v01d-website/issues"
-  },
-  "homepage": "https://github.com/V01Ddev/v01d-website#readme",
+
   "dependencies": {
-    "@mdx-js/node-loader": "^3.0.1",
-    "express": "^4.19.2",
-    "nodemon": "^3.1.4"
+    "next": "^14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }
