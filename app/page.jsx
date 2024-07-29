@@ -1,31 +1,14 @@
-import { useState } from 'react';
+import React from "react";
+import Image from 'next/image'
+import Logo from "../public/logo.svg";
 
-function Home() {
+export default function LandingPage() {
     return (
-        <img src='assets/logo.svg'>
-        <h6 id="typing"></h6>
+        <Image priority src={Logo} alt="v01d's logo" />
+
+        <h2>{"You can find my code on"}</h2>
+        <Link href="https://github.com/V01Ddev" target="_blank">github</Link>
+        <h2>"Some of my projects are documented on my"</h2>
+        <Link to="blog/blog.html">blog</Link>
     );
 }
-
-function Aboutme() {
-    return (
-        <h3>About me</h3>
-
-        <p>I am a highschool student with a strong affinity for electronics and programming.</p>
-    );
-}
-
-function Work() {
-    return (
-        <h2>You can find my code on <a href="https://github.com/V01Ddev" target="_blank">github</a></h2>
-        <h2>Some of my projects are documented on my <a href="blog/blog.html">blog</a></h2>
-    );
-}
-
-export default function landing() {
-    return (
-        <Home />,
-        <Aboutme />,
-        <Work />
-    );
-};
