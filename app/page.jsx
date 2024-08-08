@@ -1,14 +1,52 @@
-import React from "react";
 import Image from 'next/image'
-import Logo from "../public/logo.svg";
+import Logo from '/public/logo.svg';
+import NavBar from './components/navbar.jsx'
+import TypeWriter from './components/typewriter.jsx'
 
-export default function LandingPage() {
+function Fonts() {
     return (
-        <Image priority src={Logo} alt="v01d's logo" />
+        <>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet" />
+        </>
+    )
+}
 
-        <h2>{"You can find my code on"}</h2>
-        <Link href="https://github.com/V01Ddev" target="_blank">github</Link>
-        <h2>"Some of my projects are documented on my"</h2>
-        <Link to="blog/blog.html">blog</Link>
-    );
+function Home() {
+    return (
+        <section className="Home">
+            <Image className="home_logo" src={Logo} alt="v01d's logo" />
+            <TypeWriter />
+        </section>
+    )
+}
+
+function Aboutme() {
+    return (
+        <section className="Aboutme">
+            <h2>About me</h2>
+            <p>I am a highschool student with a strong affinity for electronics and programming.</p>
+        </section>
+    )
+}
+
+function Work() {
+    return (
+        <section className="Work">
+            <h3>You can find my work on </h3>
+            <a href="https://github.com/V01Ddev" target="_blank">github</a>
+        </section>
+    )
+}
+
+export default function Page() {
+    return (
+        <>
+            <Fonts />
+            <NavBar />
+            <Home />
+            <Aboutme />
+            <Work />
+        </>
+    )
 }
