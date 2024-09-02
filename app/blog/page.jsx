@@ -1,14 +1,16 @@
 "use client"
-import React, { useEffect, useState } from 'react';
 import './styles.css'
-import NavBar from '../components/navbar.jsx'
+import React, { useEffect, useState } from 'react'
+import Fonts from '@/components/fonts.jsx'
+import NavBar from '@/components/navbar.jsx'
+import BlogCard from '@/components/blogcard.jsx'
 
-function Fonts() {
+function BlogGallery() {
+
     return (
-        <>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet" />
-        </>
+    <div className="BlogGallery">
+        <BlogCard title="test blog" dis="Testing blog card component" img={true}/>
+    </div>
     )
 }
 
@@ -16,27 +18,9 @@ function Blog() {
 
     return (
         <section className="Blog">
-            <h2>Blog</h2>
+            <h1>Blog</h1>
+            <h2>still haven't written any blogs 😐</h2>
         </section>
-    )
-}
-
-
-function BlogCards() {
-
-    const [directories, setDirectories] = useState([]);
-
-    console.log(process.cwd())
-    useEffect(() => {
-        fetch('./app/api/BlogCards')
-            .then(response => response.json())
-            .then(data => setDirectories(data.directories))
-            .catch(error => console.error('Error fetching directories:', error));
-    }, []);
-
-    return (
-        <>
-        </>
     )
 }
 
@@ -46,7 +30,6 @@ export default function Page() {
         <Fonts />
         <NavBar />
         <Blog />
-        <BlogCards />
         </>
     )
 }

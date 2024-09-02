@@ -48,3 +48,67 @@ a {
     height: 60vh;
     font-size: 3vw;
 }
+
+/* Content Styling */
+.Content {
+    margin-top: 15vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+.Content ul {
+    font-size: 1.5vw;
+    display: inline-block;
+}
+
+.Content h1 {
+    font-size: 4vw;
+}
+
+.Content h2 {
+    font-size: 3vw;
+}
+
+.Content h3 {
+    font-size: 2vw;
+}
+
+.katex {
+    padding-left: 0vw;
+    padding-right: 0vw;
+    size: 3vw;
+}
+
+
+p {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    font-size: 1.5vw;
+}
+
+/* Mobile Styling */
+@media only screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 6vw;
+    }
+
+    h2 {
+        font-size: 10vw;
+    }
+
+    p {
+        font-size: 5vw;
+    }
+
+    .home_logo {
+        width: 70vw;
+        height: auto;
+        padding-top: 20vh;
+    }
+
+    .Work {
+        height: 50vh;
+        font-size: 6vw;
+    }
+}

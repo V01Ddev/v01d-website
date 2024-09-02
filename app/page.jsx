@@ -1,16 +1,9 @@
 import Image from 'next/image'
-import Logo from '/public/logo.svg';
-import NavBar from './components/navbar.jsx'
-import TypeWriter from './components/typewriter.jsx'
+import Logo from '/public/logo.svg'
+import Fonts from '@/components/fonts.jsx'
+import NavBar from '@/components/navbar.jsx'
+import TypeWriter from '@/components/typewriter.jsx'
 
-function Fonts() {
-    return (
-        <>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet" />
-        </>
-    )
-}
 
 function Home() {
     return (
