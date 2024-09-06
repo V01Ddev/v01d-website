@@ -4,6 +4,7 @@ import remarkMath from 'remark-math'
 
 const nextConfig = {
     pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
+    output: "standalone",
 }
 
 const withMDX = createMDX({
@@ -12,5 +13,6 @@ const withMDX = createMDX({
         rehypePlugins: [rehypeKatex],
     },
 })
+
 
 export default withMDX(nextConfig)
