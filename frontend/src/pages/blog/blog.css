@@ -1,5 +1,5 @@
-
-section {
+.Blog {
+    margin-top: 15vh;
     height: 70vh;
 }
 
@@ -28,12 +28,12 @@ img {
     height: auto;
 }
 
-h1 {
-    font-size: 4vw;
+.Blog h1 {
+    font-size: 5vw;
 }
 
-h2 {
-    font-size: 2vw;
+.Blog h2 {
+    font-size: 3vw;
 }
 
 h3 {
@@ -45,12 +45,12 @@ h3 {
     .Blog {
         margin-top: 15vh;
     }
-    h1 {
+    .Blog h1 {
         font-size: 10vw;
     }
 
-    h2 {
-        padding-top: 20vh;
+    .Blog h2 {
+        margin-top: 20vh;
         font-size: 6vw;
     }
 }

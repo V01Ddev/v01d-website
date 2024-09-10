@@ -1,5 +1,4 @@
-import Image from 'next/image'
-import Logo from '/public/logo.svg'
+import Logo from '@/assets/logo.svg'
 import Fonts from '@/components/fonts.jsx'
 import NavBar from '@/components/navbar.jsx'
 import TypeWriter from '@/components/typewriter.jsx'
@@ -8,7 +7,7 @@ import TypeWriter from '@/components/typewriter.jsx'
 function Home() {
     return (
         <section className="Home">
-            <Image className="home_logo" src={Logo} alt="v01d's logo" />
+            <img className="home_logo" src={Logo} alt="v01d's logo" />
             <TypeWriter />
         </section>
     )
@@ -32,7 +31,7 @@ function Work() {
     )
 }
 
-export default function Page() {
+export default function Landing() {
     return (
         <>
             <Fonts />
