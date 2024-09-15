@@ -1,3 +1,4 @@
+import { Link } from "@remix-run/react";
 
 export default function NavBar() {
     const css = `
@@ -48,8 +49,8 @@ export default function NavBar() {
         <div className="nav-bar">
             <style>{css}</style>
                 <ul>
-                    <li><a className="nav-btn" href="/">Home</a></li>
-                    <li><a className="nav-btn" href="/blog">Blog</a></li>
+                    <li><Link className="nav-btn" to="/">Home</Link></li>
+                    <li><Link className="nav-btn" to="/blog">Blog</Link></li>
                 </ul>
         </div>
     )
