@@ -2,6 +2,10 @@ section {
     height: 70vh;
 }
 
+.Blog {
+    margin-top: 15vh;
+}
+
 .BlogGallery {
     display: flex;
     flex-direction: row;
@@ -41,9 +45,6 @@ h3 {
 
 /* Mobile Styling */
 @media only screen and (max-width: 600px) {
-    .Blog {
-        margin-top: 15vh;
-    }
     h1 {
         font-size: 10vw;
     }

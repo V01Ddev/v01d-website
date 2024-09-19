@@ -49,7 +49,7 @@ export default function NavBar() {
         <div className="nav-bar">
             <style>{css}</style>
                 <ul>
-                    <li><Link className="nav-btn" to="/">Home</Link></li>
+                    <li><Link className="nav-btn" to="/" reloadDocument >Home</Link></li>
                     <li><Link className="nav-btn" to="/blog">Blog</Link></li>
                 </ul>
         </div>
