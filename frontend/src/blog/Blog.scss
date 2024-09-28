@@ -1,0 +1,58 @@
+.BlogPage {
+    section {
+        height: 70vh;
+    }
+
+    .Blog {
+        margin-top: 15vh;
+    }
+
+    .BlogGallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 10vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .BlogCard {
+        list-style-type: none;
+        text-decoration: none;
+        text-align: center;
+        width: 15vw;
+        height: 10vw;
+        padding: 2vw;
+        cursor: pointer;
+    }
+
+    img {
+        width: 15vw;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 4vw;
+    }
+
+    h2 {
+        font-size: 2vw;
+    }
+
+    h3 {
+        font-size: 1vw;
+    }
+
+    /* Mobile Styling */
+    @media only screen and (max-width: 600px) {
+        h1 {
+            font-size: 10vw;
+        }
+
+        h2 {
+            padding-top: 20vh;
+            font-size: 6vw;
+        }
+    }
+}
