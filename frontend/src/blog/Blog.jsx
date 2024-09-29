@@ -3,8 +3,8 @@ import React, { useEffect, useState } from 'react'
 import NavBar from '../components/navbar.jsx'
 import Font from '../components/font.jsx'
 
-function BlogGallery() {
 
+function BlogGallery() {
     return (
     <div className="BlogGallery">
     </div>
@@ -12,7 +12,6 @@ function BlogGallery() {
 }
 
 function Blog() {
-
     return (
         <section className="Blog">
             <h1>Blog</h1>

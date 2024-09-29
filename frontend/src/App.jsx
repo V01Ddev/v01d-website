@@ -32,7 +32,7 @@ function Work() {
     )
 }
 
-export default function Index() {
+export default function App() {
     return (
         <>
             <Font />
