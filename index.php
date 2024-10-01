@@ -5,39 +5,38 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" /> 
 					
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet"> 
-
+    <?php
+    include './components/font.php';
+    include './components/navbar.php';
+    ?>
 
 	<!-- intro and logo -->
-	<section id="home">
+	<section class="Home">
 		<head>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="shortcut icon" type="image/ico" href="/logo.ico">
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <link rel="shortcut icon" type="image/ico" href="/v01d.ico">
 
-        <img src='logo.svg', alt='logo'/>
-		<h6 id="typing"></h6>
+            <img class="home_logo" src='assets/v01d.svg', alt='logo'/>
+            <h1 id="typing"></h1>
 		</head>
 	</section>
 
 
 	<body>
-
-		<script src="./script.js"></script>
-
 		<!-- About Me -->
-		<section id="aboutme">
+		<section class="Aboutme">
 
-			<h3>About me</h3>
+			<h2>About me</h2>
 
             <p>I am a highschool student with a strong affinity for electronics and programming.</p>
 		</section>
 
 		<!-- My Work-->
-		<section id='work'>
+		<section class='Work'>
 			<h3>You can find my work on</h3>
             <a href="https://github.com/V01Ddev" target="_blank">github</a>
 		</section>
 	</body>
+
+    <script src="./script.js"></script>
 </html>

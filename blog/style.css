@@ -1,0 +1,52 @@
+@import "../style.css";
+.BlogPage {
+  /* Mobile Styling */
+}
+.BlogPage section {
+  height: 70vh;
+}
+.BlogPage .Blog {
+  margin-top: 15vh;
+}
+.BlogPage .BlogGallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 10vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+.BlogPage .BlogCard {
+  list-style-type: none;
+  text-decoration: none;
+  text-align: center;
+  width: 15vw;
+  height: 10vw;
+  padding: 2vw;
+  cursor: pointer;
+}
+.BlogPage img {
+  width: 15vw;
+  height: auto;
+}
+.BlogPage h1 {
+  font-size: 4vw;
+}
+.BlogPage h2 {
+  font-size: 2vw;
+}
+.BlogPage h3 {
+  font-size: 1vw;
+}
+@media only screen and (max-width: 600px) {
+  .BlogPage h1 {
+    font-size: 10vw;
+  }
+  .BlogPage h2 {
+    padding-top: 20vh;
+    font-size: 6vw;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

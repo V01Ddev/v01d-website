@@ -1,132 +1,114 @@
 html {
     scroll-behavior: smooth;
+    text-align: center;
+    font-size: 4vw;
     font-family: 'Roboto Mono', monospace;
     color: #4AF626;
     background: rgb(25,25,25);
     background: linear-gradient(180deg, rgba(25,25,25,1) 0%, rgba(52,52,52,1) 50%, rgba(25,25,25,1) 100%); 
 }
 
-h3 {
-    text-align: center;
-    font-size: 8vw;
-}
-
-h6 {
-    text-align: center;
-    font-size: 5vw;
-    margin: 0 auto;
-}
-
-p {
-    font-size: 6vw;
-}
-
-a {
-    text-align: left;
-    font-family: 'Roboto Mono', monospace;
-    color: #4AF626;
-    align: center;
-    font-size: 6vw;
-}
-
-button {
-    background-color: Transparent;
-    border: none;
-    cursor:pointer;
-    outline:none;
-    width: 1vw;
-}
-
 section {
-    margin-top: 30vw;
-    margin-bottom: 100vw;
-}
-
-#home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    padding-top: 30vw;
-}
-
-img {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    width: 50vw;
-}
-
-#aboutme {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    height: 100vh;
     padding-left: 10vw;
     padding-right: 10vw;
 }
 
-#work {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 20vw;
+h1 {
+    font-size: 2vw;
+}
+
+h2 {
+    font-size: 4vw;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 2vw;
 }
 
 a {
-    font-size: 10vw;
-    align-self: center;
+    color: #4AF626;
+}
+
+.home_logo {
+    width: 30vw;
+    height: auto;
+    padding-top: 10vh;
+}
+
+.Aboutme {
+    margin-top: 10vw;
+}
+
+.Work {
+    height: 60vh;
+    font-size: 3vw;
+}
+
+/* Content Styling */
+.Content {
+    margin-top: 15vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+.Content ul {
+    font-size: 1.5vw;
+    display: inline-block;
+}
+
+.Content h1 {
+    font-size: 4vw;
+}
+
+.Content h2 {
+    font-size: 3vw;
+}
+
+.Content h3 {
+    font-size: 2vw;
+}
+
+.katex {
+    padding-left: 0vw;
+    padding-right: 0vw;
+    size: 3vw;
 }
 
 
-/* BIG SCREEN */
-@media screen and (min-width: 768px){
+p {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    font-size: 1.5vw;
+}
 
-    h3 {
-        font-size: 4vw;
+/* Mobile Styling */
+@media only screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 6vw;
     }
 
-    h6 {
-        font-size: 2vw;
+    h2 {
+        font-size: 10vw;
     }
 
     p {
-        font-size: 2vw;
+        font-size: 5vw;
     }
 
-    #h69 {
+    .home_logo {
+        width: 70vw;
+        height: auto;
+        padding-top: 20vh;
+    }
+
+    .Work {
+        height: 50vh;
         font-size: 6vw;
-        margin-top: 0.5vw;
-        margin-bottom: 0vw;
-    }
-
-    section {
-        margin-top: 10vw;
-        margin-bottom: 20vw;
-    }
-
-    #home {
-        padding-top: 0.1vw;
-    }
-
-    img {
-        width: 30vw;
-    }
-
-    #aboutme {
-        align-self: center;
-        padding-left: 10vw;
-        padding-right: 10vw;
-    }
-
-    #work {
-        display: flex;
-        align-self: center;
-        margin-bottom: 20vw;
-        flex-direction: column;
-    }
-
-    a {
-        font-size: 4vw;
-        align-self: center;
     }
 }
