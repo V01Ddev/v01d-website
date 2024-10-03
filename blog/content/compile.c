@@ -1,4 +1,3 @@
-#include <signal.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -7,6 +6,7 @@
 
 int main(int argc, char *argv[]) {
     
+    // Check if passed file exists
     if (access(argv[1], F_OK) == 0) {
         int filenameLen = strlen(argv[1]);
         char filename[filenameLen];
@@ -16,7 +16,7 @@ int main(int argc, char *argv[]) {
         filename[filenameLen-2] = '\0';
 
         char cmd1[] = "pandoc "; // followed by the full filename
-        char cmd2[] = " --standalone --katex --template=template.php -o "; // followed by the filename without the .md
+        char cmd2[] = " --standalone --katex --template=template.php -o "; // followed by the filename without the md
         char cmd3[] = "php";
 
         int totalSize = strlen(cmd1) + strlen(argv[1]) + strlen(cmd2) + filenameLen + strlen(cmd3);
@@ -24,6 +24,7 @@ int main(int argc, char *argv[]) {
         char cmd[totalSize];
         strcpy(cmd, "");
 
+        // Concatenating stings together
         strcat(cmd, cmd1);
         strcat(cmd, argv[1]);
         strcat(cmd, cmd2);
