@@ -1,13 +1,24 @@
-
 <html>
-	<meta name="nerd" content="what you looking at..."/>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" /> 
-					
-    <?php
-    include '../components/font.php';
-    include '../components/navbar.php';
-    ?>
+    <meta name="nerd" content="what you looking at..."/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+
+<?php
+include $_SERVER['DOCUMENT_ROOT']."/components/navbar.php";
+include $_SERVER['DOCUMENT_ROOT']."/components/font.php";
+
+$content_dir = scandir('./content/');
+
+$content_dir = array_diff($content_dir, [".", "..", ".gitignore"]);
+$content_dir = array_values($content_dir);
+
+function blog_card($directory_name){
+    $blog_card_title = str_replace("_", " ", $directory_name);
+    print_r($blog_card_title);
+}
+
+blog_card("Hello_World");
+?>
 
     <head>
         <link rel="shortcut icon" type="image/ico" href="../v01d.ico">

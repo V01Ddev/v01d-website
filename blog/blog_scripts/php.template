@@ -229,7 +229,8 @@ for (var i = 0; i < mathElements.length; i++) {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" />
 
     <?php
-    include '../../../components/navbar.php';
+    include \$_SERVER['DOCUMENT_ROOT']."/components/navbar.php";
+    include \$_SERVER['DOCUMENT_ROOT']."/components/font.php";
     ?>
     </head>
     <body>

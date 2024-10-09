@@ -6,7 +6,6 @@
 
 int main(int argc, char *argv[]) {
     
-    // Check if passed file exists
     if (access(argv[1], F_OK) == 0) {
         int filenameLen = strlen(argv[1]);
         char filename[filenameLen];
@@ -16,7 +15,7 @@ int main(int argc, char *argv[]) {
         filename[filenameLen-2] = '\0';
 
         char cmd1[] = "pandoc "; // followed by the full filename
-        char cmd2[] = " --standalone --katex --template=template.php -o "; // followed by the filename without the md
+        char cmd2[] = " --standalone --katex --template=php.template -o "; // followed by the filename without the .md
         char cmd3[] = "php";
 
         int totalSize = strlen(cmd1) + strlen(argv[1]) + strlen(cmd2) + filenameLen + strlen(cmd3);
@@ -24,24 +23,24 @@ int main(int argc, char *argv[]) {
         char cmd[totalSize];
         strcpy(cmd, "");
 
-        // Concatenating stings together
         strcat(cmd, cmd1);
         strcat(cmd, argv[1]);
         strcat(cmd, cmd2);
         strcat(cmd, filename);
         strcat(cmd, cmd3);
 
-        if (access("template.php", F_OK) == 0) {
+        if (access("php.template", F_OK) == 0) {
             printf("[*] Running: %s\n", cmd);
             system(cmd);
         }
         else {
-            printf("[*] tamplate.php not found!\n");
+            printf("[*] php.tamplate not found!\n");
             return -1;
         }
     }
     else {
         printf("[*] File not found or was not passed!\n");
+        printf("[*] Please pass the file you'd like to compile.\n");
         return -1;
     }
 
